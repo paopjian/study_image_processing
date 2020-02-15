@@ -1,0 +1,49 @@
+实验总结
+
+图片读取 imread()
+图片保存 imwrite()
+
+图片展示 imshow()
+
+
+图片数据类型修改 
+    im2double()
+    im2uint8()
+
+图片旋转
+    imrotate()
+
+反色 255-图片
+
+三角函数
+    sin()
+    cos()
+    自变量需要生成,要有间隔(0.01)
+
+绘图 plot(x,y)
+
+傅里叶变换
+    fft() 需要传入double类型
+    fft2() 二维傅里叶变换, 图片传入前需要im2double()改变数据范围
+        低频数据在两侧,存在镜像,只看最左边
+    ifft() 逆傅里叶变换
+
+傅里叶变换频移 fftshift() 将低频移至中心,便于观察.
+
+傅里叶变换后幅值谱(amplitude)   abs(fft()) 得到虚数的模值
+傅里叶变换后相位谱(phase)       angle(fft()*180/pi)得到角度数
+    需要过滤小数据,使数据更好看清
+        tol = 1e-6;
+        Z(abs(Z)<tol)=0;
+
+显示不清时需要log( +1) 加一用来使所有数据都大于1
+
+特殊形状函数
+    (https://ww2.mathworks.cn/help/signal/gs/impulse-step-and-ramp-functions.html)
+    step 阶跃函数 
+        t = (-1:0.01:1-0.01);
+        unitstep = t>=0;
+    Impulse 脉冲 
+        t = (-1:0.01:1-0.01);
+        impulse = t==0;
+
