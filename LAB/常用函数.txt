@@ -1,0 +1,23 @@
+显示图像
+    imshow	显示图像
+    image	从数组显示图像
+    imagesc	显示使用经过标度映射的颜色的图像
+
+读取写入图像
+    imread	从图形文件读取图像
+    imresize	调整图像大小
+    imtile	将多个图像帧合并为一个矩形图块图像
+    imwrite	将图像写入图形文件
+    imfinfo	有关图形文件的信息
+    imformats	管理图像文件格式注册表
+
+转换图像类型
+    frame2im	返回与影片帧关联的图像数据
+    im2frame	将图像转换为影片帧
+    im2java	将图像转换 Java 图像
+    im2double	将图像转换为双精度值
+    ind2rgb	将索引图像转换为 RGB 图像
+    rgb2gray	将 RGB 图像或颜色图转换为灰度图
+    rgb2ind	将 RGB 图像转换为索引图像
+
+
